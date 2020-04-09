@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Welcome to my survey form</h1>
+    <p id="description">This is a simple survey form</p>
+
+    <form action="" id="survey-form">
+      <div >
+        <label for="name" id="name-label">Name:</label>
+        <br />
+        <input id="name" type="text" class="inputs" placeholder="Enter your name" value="name" required/>
+      </div >
+      <div >
+        <label for="email" id="email-label">Email:</label>
+        <br />
+        <input id="email" type="email" class="inputs" placeholder="Enter your email" value="email" required/>
+      </div>
+      <div >
+        <label for="number" id="number-label">Age (optional):</label>
+        <br />
+        <input id="number" type="number" class="inputs" min="1" max="2" placeholder="Age" value="number"/>
+      </div>
+      <div>
+        <label for="dropdown">What is your profession:</label>
+        <br />
+        <select id="dropdown" class="dropdown">
+          <option value="Artist">Artist</option>
+          <option value="Web Developer">Web Developer</option>
+          <option value="Wed Designer">Wed Designer</option>
+          <option value="Manager">Manager</option>
+        </select>
+      </div>
+      <div>
+        <p>Do you like computer programming?</p>
+        <label for="yes"><input id="yes" type="radio" name="yes-no"  value="yes" /> Yes </label>
+        <br />
+        <label for="no"><input id="no" type="radio" name="yes-no"  value="no" /> No </label>
+      </div>
+      <div>
+        <p>What you expect from this course:</p>
+        <input 
+          type="checkbox"
+          id="getbetter"
+          name="getbetter"
+          value="Get Better"
+        />
+        <label for="getbetter">Get Better </label>
+        <br />
+        <input
+          type="checkbox"
+          id="enchangeskills"
+          name="enchangeskills"
+          value="Enchange Skills"
+        />
+        <label for="getbetter">Enchange Skills</label>
+        <br />
+        <input type="checkbox" id="none" name="none" value="None" /><label
+          for="none"
+          >None</label
+        >
+      </div>
+
+      <div id="comment">
+        <label for="comment">Drop Your Comment:</label>
+        <br />
+        <textarea placeholder="Enter your comment here...." rows="8"></textarea>
+      </div>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
